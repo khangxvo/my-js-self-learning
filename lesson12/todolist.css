@@ -1,0 +1,39 @@
+div {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.js-message {
+    margin-top: 10px;
+}
+
+button {
+    height: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: green;
+}
+
+.delete-button {
+    background-color: darkred;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.reset_button {
+    background-color: darkgoldenrod;
+    width: 200px;
+    margin-bottom: 10px;
+}

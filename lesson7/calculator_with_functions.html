@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator Using Function</title>
+    </head>
+
+    <body style="
+        display: flex;
+        flex-direction: row;">
+        <div style="margin: 5px 5px;">
+            <div>
+                <button onclick="update_calculation('1')">1</button>
+                <button onclick="update_calculation('2')">2</button>
+                <button onclick="update_calculation('3')">3</button>
+            </div>
+
+            <div>
+                <button onclick="update_calculation('4')">4</button>
+                <button onclick="update_calculation('5')">5</button>
+                <button onclick="update_calculation('6')">6</button>
+            </div>
+
+            <div>
+                <button onclick="update_calculation('7')">7</button>
+                <button onclick="update_calculation('8')">8</button>
+                <button onclick="update_calculation('9')">9</button>
+            </div>
+
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: column;
+            margin: 5px;">
+            <button onclick="update_calculation('+')">+</button>
+            <button onclick="update_calculation('-')">-</button>
+            <button onclick="update_calculation('*')">x</button>
+        </div>
+        
+        <div style="
+            display: flex;
+            flex-direction: column;
+            margin: 5px;">
+            <button onclick="update_calculation('/')">/</button>
+            <button style="flex: 1;" onclick="console.log(eval(calculation)); ">=</button>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: column;
+            margin: 5px;">
+            <button onclick="console.log(calculation = '')">A/C</button>
+        </div>
+
+        <script>
+            let calculation = '';
+
+            function update_calculation(input) {
+                calculation += input
+                console.log(calculation)
+            }
+        </script>
+
+
+    </body>
+</html>

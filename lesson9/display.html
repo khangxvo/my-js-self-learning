@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+
+    <body>
+        <!-- // let input = document.querySelector('.js-input');
+        // document.querySelector('.js-display-p').innerHTML = input.value;"> -->
+        <input placeholder="Type something" class="js-input" onkeyup="display_func()">
+        <p class="js-display-p"></p>
+
+        <script>
+            function display_func(){
+                let input = document.querySelector('.js-input');
+                // bound the input object from html to input in js
+                document.querySelector('.js-display-p').innerHTML = input.value;
+                // change the html p with parsed input
+            }
+        </script>
+    </body>
+</html>

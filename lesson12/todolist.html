@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="todolist.css">
+    </head>
+
+    <body>
+        <h3>Todo List</h3>
+        <button class="reset_button"
+            onclick="task_arr = [];
+            display_on_web(task_arr);"
+            >Reset</button>
+
+            <!-- onclick="
+            localStorage.setItem('task_arr', '');
+            display_on_web(task_arr);"" -->
+
+        <div>
+            <input type="text" placeholder="Todo task" class="js-task">
+            <input type="date" class="js-due-date">
+            <button class="add-button" onclick="add_todo()">Add</button>
+        </div>
+
+        <div class="js-message">
+        </div>
+
+        <script src="todolist.js"></script>
+    </body>
+</html>

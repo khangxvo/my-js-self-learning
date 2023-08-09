@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Rock Paper Scissor Game</Title>
+        <link rel="stylesheet" href="rock_paper_scissors.css">
+    </head>
+
+    <body>
+        <h1>Rock Paper Scissors</h1>
+
+        <button class="choice_button">
+            <img src="/icons/rock.png" onclick="play_game('rock')">
+        </button>
+        <button class="choice_button">
+            <img src="/icons/paper.png" onclick="play_game('paper')">
+        </button>
+        <button class="choice_button">
+            <img src="/icons/scissor.png" onclick="play_game('scissor')">
+        </button>
+
+        <h4 class="result"></h4>
+        <p class="moves">
+        <p class="scores"></p>
+        <button onclick="reset_scores();">Reset Score</button>
+        <button onclick="auto_play()" class="auto_play_button">Auto Play</button>
+
+        <script src="rock_paper_scissors.js"></script>
+    </body>
+</html>
